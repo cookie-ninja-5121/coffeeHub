@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoffeeHub Online</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<nav>
+  <h1 class="logo-container">
+    <span class="logo-text">Coffee</span><span class="logo-box">hub</span>
+  </h1>
+  <div class="nav-items">
+    <div>
+      <input type="text" placeholder="Search coffee...">
+      <button class="search-btn">🔍</button>
+    </div>
+    <button class="btn login">Login</button>
+    <button class="btn signup">Sign Up</button>
+    <button class="btn" id="cart-btn">
+      Cart 🛒 <span id="cart-badge">0</span>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <video autoplay muted loop id="background-vid">
+      <source src="product-pics/background-vid.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+      <h2>Start Your Day with Fresh Coffee</h2>
+      <p>Explore premium beans, hot brews, and cozy vibes.</p>
+      <button class="btn btn-accent add-to-cart"
+        data-name="Special Brew"
+        data-price="150"
+        data-img="product-pics/background.jpg">
+        Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="restaurants">
+    <h2>Top 10 Best Sellers</h2>
+    <div class="cards">
+
+      <div class="card">
+        <img src="product-pics/Espresso-Temptation.jpg" alt="Espresso-Temptation">
+        <div class="card-content">
+          <h3>Espresso Temptation</h3>
+          <p>A seductive, dark-roasted intensity that pulls you in.</p>
+          <div class="stars">★★★★★</div>
+          <button class="btn btn-primary add-to-cart"
+            data-name="Espresso Temptation"
+            data-price="120"
+            data-img="product-pics/Espresso-Temptation.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+    <div class="card">
+      <img src="product-pics/The-Midnight-Bold.jpg" alt="The-Midnight-Bold">
+      <div class="card-content">
+        <h3>The Midnight Bold</h3>
+        <p>Pure, dark, and deep. A smooth awakening for the soul.</p>
+        <div class="stars">★★★★★</div>
+        <button class=" btn btn-primary add-to-cart" 
+            data-name="The Midnight Bold" 
+            data-price="130"
+            data-img="product-pics/The-Midnight-Bold.jpg">
+            Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="product-pics/The-Golden-Ritual.webp" alt="The-Golden-Ritual">
+      <div class="card-content">
+        <h3>The Golden Ritual</h3>
+        <p>A Parisian-style escape in every bite and sip.</p>
+        <div class="stars">★★★★★</div>
+        <button class=" btn btn-primary add-to-cart" 
+            data-name="The Golden Ritual"
+            data-price="110"
+            data-img="product-pics/The-Golden-Ritual.webp">
+            Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="product-pics/flat-white.webp" alt="flat-white">
+      <div class="card-content">
+        <h3>The Connoisseur’s Choice</h3>
+        <p>Silky, strong, and sophisticated. All the velvet, none of the fluff.</p>
+        <div class="stars">★★★★★</div>
+        <button class=" btn btn-primary add-to-cart" 
+            data-name="The Connoisseur’s Choice"
+            data-price="140"
+            data-img="product-pics/flat-white.webp">
+            Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="product-pics/Cortado.webp" alt="Cortado">
+      <div class="card-content">
+        <h3>Cortado</h3>
+        <p>Perfectly balanced. Where bold espresso meets a smooth, milky finish.</p>
+        <div class="stars">★★★★★</div>
+        <button class=" btn btn-primary add-to-cart" 
+            data-name="Cortado"
+            data-price="135"
+            data-img="product-pics/Cortado.webp">
+            Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="product-pics/Macchiato.jpg" alt="Macchiato">
+      <div class="card-content">
+        <h3>Macchiato</h3>
+        <p>A fierce caffeine punch marked by a tiny cloud of cream.</p>
+        <div class="stars">★★★★★</div>
+        <button class=" btn btn-primary add-to-cart"
+            data-name="Macchiato"
+            data-price="125"
+            data-img="product-pics/Macchiato.jpg">
+            Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="product-pics/Cold-Brew.jpg" alt="Cold Brew">
+      <div class="card-content">
+        <h3>Cold Brew</h3>
+        <p>Low acid, high energy, and steeped to liquid perfection.</p>
+        <div class="stars">★★★★★</div>
+        <button class=" btn btn-primary add-to-cart"
+            data-name="Cold Brew"
+            data-price="140"
+            data-img="product-pics/Cold-Brew.jpg">
+            Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="product-pics/Affogato.jpg" alt="Affogato">
+      <div class="card-content">
+        <h3>Affogato</h3>
+        <p>Espresso poured over vanilla ice cream for a sweet, creamy treat.</p>
+        <div class="stars">★★★★★</div>
+        <button class=" btn btn-primary add-to-cart"
+            data-name="Affogato"
+            data-price="115"
+            data-img="product-pics/Affogato.jpg">
+            Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="product-pics/Dirty-Chai.webp" alt="Dirty Chai">
+      <div class="card-content">
+        <h3>Dirty Chai</h3>
+        <p>Spiced tea with a shot of espresso for an extra kick.</p>
+        <div class="stars">★★★★★</div>
+        <button class=" btn btn-primary add-to-cart"
+            data-name="Dirty Chai"
+            data-price="130"
+            data-img="product-pics/Dirty-Chai.webp">
+            Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="product-pics/Espresso-Con-Panna.webp" alt="Espresso-Con-Panna">
+      <div class="card-content">
+        <h3>Espresso Con Panna</h3>
+        <p>A bold, intense shot topped with a luxurious mountain of whipped cream.</p>
+        <div class="stars">★★★★★</div>
+        <button class=" btn btn-primary add-to-cart"
+            data-name="Espresso Con Panna"
+            data-price="145"
+            data-img="product-pics/Espresso-Con-Panna.webp">
+            Add to Cart
+        </button>
+      </div>
+    </div>
+    </div>
+  </section>
+</main>
+
+<!-- Cart Panel -->
+<div id="cart-panel">
+  <span class="close-cart">✖</span>
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+  <div class="cart-total">Total: ₱0</div>
+  <button id="checkout-btn">Checkout</button>
+</div>
+
+<!-- Login Modal -->
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit" class="btn modal-btn">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#signup" class="switch-form">Sign Up</a></p>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signup-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <input type="text" id="signup-name" placeholder="Full Name" required>
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Password" required>
+      <input type="password" id="signup-confirm" placeholder="Confirm Password" required>
+      <button type="submit" class="btn modal-btn">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="#login" class="switch-form">Login</a></p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 CoffeeHub | Made for School Project
+</footer>
+
+<script src="Coffehub.js"></script>
+</body>
+</html>
